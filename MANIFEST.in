@@ -1,0 +1,1 @@
+include scripts/pep381run scripts/processlogs MANIFEST.in
