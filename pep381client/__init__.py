@@ -311,6 +311,7 @@ class Synchronization:
         response = None
         try:
             response = urllib2.urlopen(request)
+            status_code = response.getcode()
         except urllib2.HTTPError, e:
             status_code = e.code
             print  "Error Code: " + str(e.code) + ', when maybe_copy_file ' + e
